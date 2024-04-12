@@ -15,7 +15,9 @@ const AboutMe = () => {
                     <p className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab at
                         cupiditate deleniti deserunt doloremque doloribus ducimus est laudantium libero magnam maxime
                         perferendis quis quos repellendus reprehenderit, sequi vero voluptas?</p>
-                    <button className='button'>دانلود رزومه</button>
+                    <div className="buttonContainer">
+                        <button className='button'>دانلود رزومه</button>
+                    </div>
                 </div>
             </div>
         </Section>

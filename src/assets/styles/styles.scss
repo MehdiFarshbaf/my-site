@@ -144,9 +144,9 @@ li {
 .button {
   background-color: var(--red);
   color: var(--white);
-  padding: 12px 36px;
+  padding: 10px 30px;
   outline: none;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 6px;
   cursor: pointer;
   border: 2px solid var(--red);
@@ -192,6 +192,12 @@ li {
   column-gap: 50px;
 }
 
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .sub-title {
   font-size: 32px;
   font-weight: 700;
@@ -221,7 +227,7 @@ li {
     align-items: center;
   }
   .sub-title {
-    text-align: center;
+    //text-align: center;
     font-size: 18px;
   }
 

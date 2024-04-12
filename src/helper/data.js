@@ -1,10 +1,31 @@
-import {FaCode, FaPaintBrush} from "react-icons/fa";
+import {FaCode, FaMobileAlt, FaPaintBrush, FaUser} from "react-icons/fa";
 
 import profile1 from '../assets/images/profile-2.jpeg'
 import profile2 from '../assets/images/profile-3.jpeg'
 import profile3 from '../assets/images/profile-4.jpeg'
 import profile4 from '../assets/images/profile-5.jpeg'
+import {IoLocationSharp} from "react-icons/io5";
+import {MdEmail} from "react-icons/md";
 
+
+export const contactInfoList = [
+    {
+        id: 0,
+        label: 'نام:',
+        description: 'مهدی فرشباف',
+        icon: <FaUser/>
+    }, {
+        id: 1,
+        label: 'موبایل:',
+        description: '0903-9067633',
+        icon: <FaMobileAlt />
+    }, {
+        id: 2,
+        label: 'ایمیل:',
+        description: 'mehdifarshbaf92@mail.com',
+        icon: <MdEmail/>
+    }
+]
 export const projectList = [
     {
         id: 0,

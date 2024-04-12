@@ -1,0 +1,33 @@
+.contactInfo {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 65px;
+  border-bottom: 1px solid var(--red);
+}
+
+.icon {
+  font-size: 25px;
+
+  svg {
+    color: var(--red)
+  }
+}
+
+.label {
+}
+
+.description {
+  //color: #2222
+}
+
+.info {
+  margin-right: 30px;
+  font-weight: 300;
+
+  p {
+    text-align: right;
+    direction: rtl;
+  }
+}
