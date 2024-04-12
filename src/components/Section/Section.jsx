@@ -7,7 +7,7 @@ const Section = ({title = "", subTitle = "", children}) => {
                     <p className='subTitle'>{subTitle}</p>
                     <div className="line"/>
                 </div>
-                <div className="w100">
+                <div className="w-100">
                     {children}
                 </div>
 

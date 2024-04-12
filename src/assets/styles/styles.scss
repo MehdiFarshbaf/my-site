@@ -10,6 +10,13 @@ body {
   font-size: 16px;
 }
 
+.description {
+  margin-bottom: 20px;
+  line-height: 22px;
+  text-align: justify;
+  direction: rtl;
+}
+
 .section {
   padding: 100px 0;
   position: relative;
@@ -55,8 +62,24 @@ body {
   }
 }
 
+.sub-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  direction: rtl;
+  text-align: right;
+
+  span {
+    color: var(--red);
+  }
+}
+
 .section:nth-child(even) {
   background: var(--white);
+
+  .description, .sub-title {
+    color: var(--black);
+  }
 
   .title {
     h2 {
@@ -79,6 +102,10 @@ body {
 
 .section:nth-child(odd) {
   background: var(--bgBlack);
+
+  .description, .sub-title {
+    color: var(--white);
+  }
 
   .title {
     h2 {
@@ -170,9 +197,17 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+  .sub-title{
+    text-align: center;
+    font-size: 18px;
+  }
+
   .inside {
     width: 100% !important;
     padding: 0 8px;
+  }
+  .section {
+    padding: 50px 0;
   }
 }
 
