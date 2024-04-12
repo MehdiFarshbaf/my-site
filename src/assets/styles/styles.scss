@@ -177,6 +177,12 @@ li {
   align-items: center;
 }
 
+.myServiceContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
 
 .sub-title {
   font-size: 32px;
@@ -197,7 +203,13 @@ li {
 }
 
 @media screen and (max-width: 768px) {
-  .sub-title{
+  .myServiceContainer {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub-title {
     text-align: center;
     font-size: 18px;
   }

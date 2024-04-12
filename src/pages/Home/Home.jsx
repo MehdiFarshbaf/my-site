@@ -1,12 +1,13 @@
-import Section from "../../components/Section/Section";
 import AboutMe from "../../components/Home/AboutMe/AboutMe";
+import MyServices from "../../components/Home/MyServices/MyServices";
+import MySkills from "../../components/Home/MySkills/MySkills";
 
 const Home = () => {
     return (
         <>
             <AboutMe/>
-            <Section title="My Services" subTitle="who i provide"><p>My Services</p></Section>
-            <Section title="My Services" subTitle="who i provide"><p>My Services</p></Section>
+            <MyServices/>
+            <MySkills/>
         </>
     )
 }
