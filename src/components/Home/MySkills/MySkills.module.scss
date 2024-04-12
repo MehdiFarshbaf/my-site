@@ -1,0 +1,27 @@
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.chart {
+  width: 48%;
+}
+
+.description {
+  width: 48%;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .chart {
+    width: 100%;
+  }
+  .description {
+    width: 100%;
+  }
+}
