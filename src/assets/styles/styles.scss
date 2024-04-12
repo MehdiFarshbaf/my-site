@@ -184,6 +184,14 @@ li {
   column-gap: 20px;
 }
 
+.myProjectsContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+  column-gap: 50px;
+}
+
 .sub-title {
   font-size: 32px;
   font-weight: 700;
@@ -203,6 +211,9 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+  .myProjectsContainer {
+    grid-template-columns: 1fr;
+  }
   .myServiceContainer {
     grid-template-columns: 1fr;
     row-gap: 10px;

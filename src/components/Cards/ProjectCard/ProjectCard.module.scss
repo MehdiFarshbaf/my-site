@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  background: #222;
+  border-radius: 6px;
+  padding: 25px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  background: var(--red);
+
+  .box {
+    transform: scale(1.05);
+  }
+
+  .image {
+    border: 5px solid var(--white);
+  }
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--red);
+  transition: all 0.3s ease;
+}
+
+.name {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+.description {
+}
