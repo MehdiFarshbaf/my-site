@@ -13,6 +13,10 @@
   height: auto;
 }
 
+.description {
+  direction: rtl;
+  text-align: center;
+}
 
 
 .container {
@@ -33,10 +37,12 @@
 
 .card:hover {
   svg {
-    color: var(--white) ;
+    color: var(--white);
   }
+
   background: var(--red);
-  .container{
+
+  .container {
     transform: scale(1.05);
   }
 }

@@ -1,4 +1,5 @@
 import styles from './Header.module.scss'
+import {Link} from "react-router-dom";
 
 const Header = () => {
     return (
@@ -6,7 +7,10 @@ const Header = () => {
             <div className="inside">
                 <div className={styles.container}>
                     <div className={styles.logo}>
-                        <p>Portio<span>lio</span></p>
+                        <Link to="/">
+                            <p>Portfo<span>lio</span></p>
+
+                        </Link>
                     </div>
                     <div className="link">
                         <nav>

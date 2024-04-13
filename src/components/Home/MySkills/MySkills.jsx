@@ -14,15 +14,15 @@ const MySkills = () => {
 
                 <div className={styles.chart}>
                     {skillsList.map(skill => (
-                        <Chart info={skill}/>
+                        <Chart key={skill.id} info={skill}/>
                     ))}
                 </div>
                 <div className={styles.description}>
                     <h4 className='sub-title'>مهارت ها و تجربیات من</h4>
-                    <p className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab at
-                        cupiditate deleniti deserunt doloremque doloribus ducimus est laudantium libero magnam maxime
-                        perferendis quis quos repellendus reprehenderit, sequi vero voluptas?</p>
-                    {/*<button className='button'>Read more <FaArrowRight/></button>*/}
+                    <p className="description">نزدیک به دو سال در شرکت جوان فکران داده گستر پویا(ویستا) کار کردم. یکسال
+                        و چند ماه حظوری و چند ماهی دور کاری. خیلی خب بود، همه چی از اونجا شروع کرد، تیم UI کار رو در
+                        فیگما اماده میکرد و بچه های بک و فرانت و موبایل جدا جدا مشغول میشدیم. حظور تمام تیم ها کنار هم
+                        باعث شد خیلی از مهارت ها رو از همونجا یاد بگیرم و ...</p>
                 </div>
             </div>
         </Section>

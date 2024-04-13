@@ -2,8 +2,12 @@ import Section from "../../Section/Section";
 
 // styles
 import styles from './AboutMe.module.scss'
+
 //images
 import profile from '../../../assets/images/profile.jpeg'
+
+//cv
+import cv from './../../../assets/cv/Mehdi Farshbaf 2024.pdf'
 
 const AboutMe = () => {
     return (
@@ -12,11 +16,12 @@ const AboutMe = () => {
                 <img src={profile} className={styles.profileImage} alt=""/>
                 <div>
                     <h4 className="sub-title">من مهدی هستم، توسعه دهنده هستم</h4>
-                    <p className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab at
-                        cupiditate deleniti deserunt doloremque doloribus ducimus est laudantium libero magnam maxime
-                        perferendis quis quos repellendus reprehenderit, sequi vero voluptas?</p>
+                    <p className="description">سلام، وقت بخیر. من مهدی فرشباف هستم. برنامه نویس و توسعه دهنده ی React.
+                        حدود دو سال هست که وارد دنیای برنامه نویسی شدم و عاشق این کار هستم.</p>
                     <div className="buttonContainer">
-                        <button className='button'>دانلود رزومه</button>
+                        <a href={cv} download="MyExampleDoc" target='_blank'>
+                            <button className='button'>دانلود رزومه</button>
+                        </a>
                     </div>
                 </div>
             </div>

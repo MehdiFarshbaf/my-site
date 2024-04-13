@@ -1,10 +1,10 @@
 import {FaCode, FaMobileAlt, FaPaintBrush, FaUser} from "react-icons/fa";
 
-import profile1 from '../assets/images/profile-2.jpeg'
+import emzaCafe from '../assets/images/emzaCafe.jpeg'
 import profile2 from '../assets/images/profile-3.jpeg'
 import profile3 from '../assets/images/profile-4.jpeg'
 import profile4 from '../assets/images/profile-5.jpeg'
-import {IoLocationSharp} from "react-icons/io5";
+import fiat from '../assets/images/logoGold.png'
 import {MdEmail} from "react-icons/md";
 
 
@@ -18,7 +18,7 @@ export const contactInfoList = [
         id: 1,
         label: 'موبایل:',
         description: '0903-9067633',
-        icon: <FaMobileAlt />
+        icon: <FaMobileAlt/>
     }, {
         id: 2,
         label: 'ایمیل:',
@@ -29,43 +29,51 @@ export const contactInfoList = [
 export const projectList = [
     {
         id: 0,
-        name: 'Mojtaba Hosseini',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, et illo iure neque pariatur perferendis rerum unde!',
-        image: profile1
+        name: 'Emza Cafe',
+        description: 'خرید و سفارش آنلاین قهوه و انواع محصولات مربوطه',
+        image: emzaCafe,
+        link: "https://emza-group.ir/",
+        path: "/project/emza-cafe"
     }, {
         id: 1,
-        name: 'Erfan Kakaei',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, et illo iure neque pariatur perferendis rerum unde!',
-        image: profile2
+        name: 'Salmode',
+        description: 'سفارش آنلاین انواع پوشاک',
+        image: profile2,
+        link: null,
+        path: "/project/"
     }, {
         id: 2,
-        name: 'Ali Ostad',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, et illo iure neque pariatur perferendis rerum unde!',
-        image: profile3
+        name: 'Portfolio',
+        description: 'سایت شخصی برای معرفی شخص',
+        image: profile3,
+        link: null,
+        path: "/project/"
     }, {
         id: 3,
-        name: 'Mehdi Rajabi',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, et illo iure neque pariatur perferendis rerum unde!',
-        image: profile4
+        name: 'Money Exchange',
+        description: 'صرافی ثانیه (استرالیا)',
+        image: fiat,
+        link: "https://www.sanieh.com.au/",
+        path: "/project/"
     },
 ]
 export const myServices = [
     {
         id: 0,
         title: 'Web Design',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, odio?',
+        description: 'تبدیل سایت شما از قالب فیگما به خروجی React',
         icon: <FaPaintBrush className='icon'/>
     },
     {
         id: 1,
-        title: 'Advertising',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, odio?',
+        title: 'Optimized for Any Device',
+        description: 'ارائه سایت به شکلی کاملا ریسپانسیو',
         icon: <FaCode className='icon'/>
     },
     {
         id: 2,
         title: 'Apps Design',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, odio?',
+        description: 'ارائه قالب های آماده فروشگاهی، صرافی، پنل های مدیریت ...',
         icon: <FaCode className='icon'/>
     }
 ]
@@ -73,21 +81,37 @@ export const skillsList = [
     {
         id: 0,
         title: 'HTML',
-        percent: 90
+        percent: 85
     }, {
         id: 1,
         title: 'CSS',
-        percent: 60
+        percent: 80
     }, {
         id: 2,
         title: 'JavaScript',
         percent: 80
     }, {
         id: 3,
-        title: 'PHP',
-        percent: 50
+        title: 'ReactJS',
+        percent: 80
     }, {
         id: 4,
-        title: 'MySQL',
+        title: 'NextJS',
         percent: 70
+    }, {
+        id: 5,
+        title: 'TypeScript',
+        percent: 70
+    }, {
+        id: 6,
+        title: 'TailWind',
+        percent: 50
+    }, {
+        id: 7,
+        title: 'Git',
+        percent: 60
+    }, {
+        id: 8,
+        title: 'NodeJS(express)',
+        percent: 68
     }]

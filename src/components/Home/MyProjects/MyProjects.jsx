@@ -6,7 +6,7 @@ const MyProjects = () => {
     return (
         <Section title="پروژه ها" subTitle="نمونه کارهای من">
             <div className="myProjectsContainer">
-                {projectList.map(project=>(<ProjectCard project={project} />))}
+                {projectList.map(project=>(<ProjectCard key={project.id} project={project} />))}
             </div>
         </Section>
     )
