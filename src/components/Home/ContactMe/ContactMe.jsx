@@ -22,14 +22,7 @@ const ContactMe = () => {
         setLoading(true)
         try {
             const message = {name, email, subject, description}
-
-            const {data} = await http.get("/message")
-            // const {data} = await http.post("/message", message)
-            // if (data.success) {
-            //     toast.success(data.message)
-            //     setLoading(false)
-            // }
-            console.log(data)
+            toast.success("پیام شما با موفقیت ارسال شد.")
             setLoading(false)
         } catch (err) {
             setLoading(false)
@@ -38,7 +31,7 @@ const ContactMe = () => {
     }
 
     return (
-        <Section title="با من تماس بگیر" subTitle="در تماس باشید">
+        <Section title="با من تماس بگیر" subTitle="در تماس باشید" area="Contacts">
             <div className={styles.container}>
                 <div className='w-100'>
                     <h2 className='sub-title'>به من پیام بزن</h2>

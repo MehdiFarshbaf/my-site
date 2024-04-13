@@ -20,6 +20,9 @@
   align-items: center;
   background-color: var(--bgBlack);
   height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 .container {
@@ -51,8 +54,39 @@
   }
 }
 
+.menu {
+  background-color: rgba(245, 247, 250, 1);
+  width: 260px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  border: 0.2px solid rgba(39, 91, 209, 0.5);
+  right: -100%;
+  transition: 850ms;
+}
+
+.menu.activeMobile {
+  right: 0;
+  transition: 350ms;
+}
+
+.btnMenu{
+  display: none;
+  font-size: 30px;
+  color: var(--white);
+}
 @media screen and (max-width: 576px) {
-  .header {
-    display: none;
+
+  .btnMenu{
+    display: block;
+  }
+  .container {
+    ul {
+      display: none;
+    }
   }
 }

@@ -1,11 +1,12 @@
+//icons
 import {FaCode, FaMobileAlt, FaPaintBrush, FaUser} from "react-icons/fa";
+import {MdEmail} from "react-icons/md";
 
+//images
 import emzaCafe from '../assets/images/emzaCafe.jpeg'
 import profile2 from '../assets/images/profile-3.jpeg'
 import profile3 from '../assets/images/profile-4.jpeg'
-import profile4 from '../assets/images/profile-5.jpeg'
 import fiat from '../assets/images/logoGold.png'
-import {MdEmail} from "react-icons/md";
 
 
 export const contactInfoList = [
@@ -39,22 +40,22 @@ export const projectList = [
         name: 'Salmode',
         description: 'سفارش آنلاین انواع پوشاک',
         image: profile2,
-        link: null,
-        path: "/project/"
+        link: "https://salmode.farshbaf-dev.ir/",
+        path: "/project/salmode"
     }, {
         id: 2,
         name: 'Portfolio',
         description: 'سایت شخصی برای معرفی شخص',
         image: profile3,
         link: null,
-        path: "/project/"
+        path: "/project/portfolio"
     }, {
         id: 3,
         name: 'Money Exchange',
         description: 'صرافی ثانیه (استرالیا)',
         image: fiat,
         link: "https://www.sanieh.com.au/",
-        path: "/project/"
+        path: "/project/fiat"
     },
 ]
 export const myServices = [
@@ -115,3 +116,11 @@ export const skillsList = [
         title: 'NodeJS(express)',
         percent: 68
     }]
+
+export const navList = [
+    {id: 4, label: "ارتباط با من", area: "Contacts"},
+    {id: 3, label: "نمونه کارها", area: "Projects"},
+    {id: 2, label: "مهارت ها", area: "Skills"},
+    {id: 1, label: "خدمات", area: "Services"},
+    {id: 0, label: "درباره من", area: "About"}
+]

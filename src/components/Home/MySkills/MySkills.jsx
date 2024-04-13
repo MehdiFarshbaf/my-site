@@ -9,7 +9,7 @@ import {FaArrowRight} from "react-icons/fa";
 
 const MySkills = () => {
     return (
-        <Section title="مهارت های من" subTitle="چیزی که میدانم">
+        <Section title="مهارت های من" subTitle="چیزی که میدانم" area="Skills">
             <div className={styles.content}>
 
                 <div className={styles.chart}>

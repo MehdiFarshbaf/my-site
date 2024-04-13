@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 const LinkToSite = ({address,caption}) => {
     return (
         <div className={styles.row}>
-            <TbWorldWww/>
+            <TbWorldWww fontSize={22}/>
             <a target='_blank'
                rel='noopener noreferrer' href={address}>{caption}</a>
         </div>

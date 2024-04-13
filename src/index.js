@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import {ToastContainer} from "react-toastify";
 import {BrowserRouter} from "react-router-dom";
+import {AuthContextProvider} from "./context/context";
 
 //styles
 import 'react-toastify/dist/ReactToastify.css';
@@ -15,7 +16,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     <BrowserRouter>
-        <App/>
-        <ToastContainer position="top-right" rtl={true} closeOnClick={true}/>
+        <AuthContextProvider>
+            <App/>
+            <ToastContainer position="top-right" rtl={true} closeOnClick={true}/>
+        </AuthContextProvider>
     </BrowserRouter>
 );
